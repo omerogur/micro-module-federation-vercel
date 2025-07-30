@@ -18,6 +18,7 @@ const nextConfig = {
         exposes: {
           './header': './pages/_navigation/header/index.tsx',
           './footer': './pages/_navigation/footer/index.tsx',
+          './sidebar': './pages/_navigation/sidebar/index.tsx',
           './app': './pages/_app.tsx',
         },
       }),

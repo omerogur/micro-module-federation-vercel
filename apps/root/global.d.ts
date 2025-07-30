@@ -23,3 +23,7 @@ declare module 'navigation/footer' {
   // eslint-disable-next-line import/no-default-export
   export default function Footer(): JSX.Element;
 }
+declare module 'navigation/sidebar' {
+  // eslint-disable-next-line import/no-default-export
+  export default function Sidebar(): JSX.Element;
+}

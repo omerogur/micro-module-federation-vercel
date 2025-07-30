@@ -32,6 +32,9 @@ importers:
 
   apps/content:
     dependencies:
+      '@company/shared-styles':
+        specifier: workspace:*
+        version: link:../../packages/shared-styles
       '@module-federation/nextjs-mf':
         specifier: ^8
         version: 8.8.31(next@14.2.30(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(styled-jsx@5.1.1(react@19.0.0))(typescript@5.7.3)(webpack@5.99.9)
@@ -81,6 +84,12 @@ importers:
 
   apps/navigation:
     dependencies:
+      '@company/shared-styles':
+        specifier: workspace:*
+        version: link:../../packages/shared-styles
+      '@company/ui-components':
+        specifier: workspace:*
+        version: link:../../packages/ui-components
       '@module-federation/nextjs-mf':
         specifier: ^8.8.26
         version: 8.8.31(next@14.2.30(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(styled-jsx@5.1.1(react@19.0.0))(typescript@5.7.3)(webpack@5.99.9)
@@ -130,6 +139,9 @@ importers:
 
   apps/root:
     dependencies:
+      '@company/shared-styles':
+        specifier: workspace:*
+        version: link:../../packages/shared-styles
       '@module-federation/nextjs-mf':
         specifier: ^8
         version: 8.8.31(next@14.2.30(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(styled-jsx@5.1.1(react@19.0.0))(typescript@5.7.3)(webpack@5.99.9)
@@ -201,6 +213,18 @@ importers:
         specifier: ^14
         version: 14.2.30(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
+  packages/shared-styles:
+    devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4
+        version: 4.1.10
+      postcss:
+        specifier: ^8.4.24
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4
+        version: 4.1.10
+
   packages/ts-config:
     dependencies:
       '@vercel/style-guide':
@@ -210,6 +234,25 @@ importers:
       next:
         specifier: ^14
         version: 14.2.30(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
+  packages/ui-components:
+    dependencies:
+      react:
+        specifier: 19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: 19.0.0
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@types/react':
+        specifier: 18.3.1
+        version: 18.3.1
+      '@types/react-dom':
+        specifier: 18.3.0
+        version: 18.3.0
       typescript:
         specifier: 5.7.3
         version: 5.7.3

@@ -7,7 +7,9 @@
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@company/shared-styles/*": ["../../packages/shared-styles/*"],
+      "@company/ui-components/*": ["../../packages/ui-components/*"]
     },
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "allowJs": true

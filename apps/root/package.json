@@ -9,6 +9,7 @@
     "start": "next start --port $(microfrontends port)"
   },
   "dependencies": {
+    "@company/shared-styles": "workspace:*",
     "@module-federation/nextjs-mf": "^8",
     "@vercel/microfrontends": "^1.3.0",
     "@vercel/related-projects": "^1.0.0",

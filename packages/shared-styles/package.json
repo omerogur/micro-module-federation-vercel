@@ -1,0 +1,24 @@
+{
+  "name": "@company/shared-styles",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "tailwind.config.js",
+    "globals.css",
+    "components.css",
+    "tokens",
+    "themes"
+  ],
+  "exports": {
+    "./tailwind.config": "./tailwind.config.js",
+    "./globals.css": "./globals.css",
+    "./components.css": "./components.css",
+    "./tokens/*": "./tokens/*"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "postcss": "^8.4.24"
+  }
+}

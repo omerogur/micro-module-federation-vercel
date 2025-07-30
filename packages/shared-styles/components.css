@@ -1,0 +1,385 @@
+/* Button Components */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary-700 focus:ring-primary;
+}
+
+.btn-secondary {
+  @apply bg-muted text-muted-foreground hover:bg-gray-300 focus:ring-gray-500;
+}
+
+.btn-danger {
+  @apply bg-error text-white hover:bg-error-700 focus:ring-error;
+}
+
+.btn-success {
+  @apply bg-success text-white hover:bg-success-700 focus:ring-success;
+}
+
+.btn-outline {
+  @apply border border-border bg-transparent hover:bg-muted;
+}
+
+.btn-ghost {
+  @apply bg-transparent hover:bg-muted focus:ring-0;
+}
+
+.btn-sm {
+  @apply text-sm px-3 py-1.5;
+}
+
+.btn-lg {
+  @apply text-lg px-6 py-3;
+}
+
+.btn-icon {
+  @apply p-2;
+}
+
+/* Button Group */
+.btn-group {
+  @apply inline-flex rounded-md shadow-sm;
+}
+
+.btn-group .btn:not(:first-child) {
+  @apply -ml-px rounded-l-none;
+}
+
+.btn-group .btn:not(:last-child) {
+  @apply rounded-r-none;
+}
+
+/* Form Components */
+.form-group {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-foreground;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 bg-background border border-border rounded-md shadow-sm 
+         placeholder-muted-foreground focus:outline-none focus:ring-2 
+         focus:ring-primary focus:border-primary transition-colors;
+}
+
+.form-textarea {
+  @apply form-input resize-y min-h-[80px];
+}
+
+.form-select {
+  @apply form-input appearance-none bg-[url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 20 20%27%3e%3cpath stroke=%27%236b7280%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%271.5%27 d=%27M6 8l4 4 4-4%27/%3e%3c/svg%3e')] bg-[position:right_0.5rem_center] bg-[size:1.5em_1.5em] bg-no-repeat pr-10;
+}
+
+.form-checkbox {
+  @apply h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2;
+}
+
+.form-radio {
+  @apply form-checkbox rounded-full;
+}
+
+.form-error {
+  @apply mt-1 text-sm text-error;
+}
+
+.form-help {
+  @apply mt-1 text-sm text-muted-foreground;
+}
+
+/* Card Components */
+.card {
+  @apply bg-card text-card-foreground rounded-lg border border-border shadow-sm;
+}
+
+.card-hover {
+  @apply hover:shadow-md transition-shadow duration-200;
+}
+
+.card-header {
+  @apply px-6 py-4 border-b border-border;
+}
+
+.card-title {
+  @apply text-lg font-semibold;
+}
+
+.card-description {
+  @apply text-sm text-muted-foreground mt-1;
+}
+
+.card-body {
+  @apply px-6 py-4;
+}
+
+.card-footer {
+  @apply px-6 py-4 border-t border-border bg-muted/50;
+}
+
+/* Badge Components */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+  @apply bg-primary/10 text-primary-700 dark:text-primary-300;
+}
+
+.badge-secondary {
+  @apply bg-secondary/10 text-secondary-700 dark:text-secondary-300;
+}
+
+.badge-success {
+  @apply bg-success/10 text-success-700 dark:text-success-300;
+}
+
+.badge-warning {
+  @apply bg-warning/10 text-warning-700 dark:text-warning-300;
+}
+
+.badge-error {
+  @apply bg-error/10 text-error-700 dark:text-error-300;
+}
+
+.badge-info {
+  @apply bg-primary/10 text-primary-700 dark:text-primary-300;
+}
+
+/* Alert Components */
+.alert {
+  @apply p-4 rounded-md border;
+}
+
+.alert-success {
+  @apply bg-success/10 text-success-800 border-success/20 dark:text-success-200;
+}
+
+.alert-error {
+  @apply bg-error/10 text-error-800 border-error/20 dark:text-error-200;
+}
+
+.alert-warning {
+  @apply bg-warning/10 text-warning-800 border-warning/20 dark:text-warning-200;
+}
+
+.alert-info {
+  @apply bg-primary/10 text-primary-800 border-primary/20 dark:text-primary-200;
+}
+
+/* Table Components */
+.table {
+  @apply min-w-full divide-y divide-border;
+}
+
+.table thead {
+  @apply bg-muted;
+}
+
+.table th {
+  @apply px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider;
+}
+
+.table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-foreground;
+}
+
+.table tbody tr {
+  @apply border-b border-border;
+}
+
+.table tbody tr:hover {
+  @apply bg-muted/50;
+}
+
+.table tbody tr:nth-child(even) {
+  @apply bg-muted/30;
+}
+
+/* Navigation Components */
+.nav-link {
+  @apply block px-3 py-2 rounded-md text-sm font-medium transition-colors;
+}
+
+.nav-link-active {
+  @apply bg-primary/10 text-primary;
+}
+
+.nav-link-inactive {
+  @apply text-muted-foreground hover:bg-muted hover:text-foreground;
+}
+
+/* Breadcrumb Components */
+.breadcrumb {
+  @apply flex items-center space-x-2 text-sm text-muted-foreground;
+}
+
+.breadcrumb-item {
+  @apply hover:text-foreground transition-colors;
+}
+
+.breadcrumb-separator {
+  @apply mx-2;
+}
+
+/* Modal Components */
+.modal-overlay {
+  @apply fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4;
+}
+
+.modal-content {
+  @apply bg-card rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-auto;
+}
+
+.modal-header {
+  @apply px-6 py-4 border-b border-border;
+}
+
+.modal-body {
+  @apply px-6 py-4;
+}
+
+.modal-footer {
+  @apply px-6 py-4 border-t border-border flex justify-end space-x-2;
+}
+
+/* Toast Components */
+.toast {
+  @apply fixed bottom-4 right-4 z-50 p-4 rounded-md shadow-lg max-w-sm animate-slide-up;
+}
+
+.toast-success {
+  @apply bg-success text-white;
+}
+
+.toast-error {
+  @apply bg-error text-white;
+}
+
+.toast-warning {
+  @apply bg-warning text-white;
+}
+
+.toast-info {
+  @apply bg-primary text-white;
+}
+
+/* Dropdown Components */
+.dropdown {
+  @apply relative inline-block text-left;
+}
+
+.dropdown-menu {
+  @apply absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-card shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
+}
+
+.dropdown-item {
+  @apply block px-4 py-2 text-sm text-foreground hover:bg-muted transition-colors;
+}
+
+.dropdown-divider {
+  @apply border-t border-border my-1;
+}
+
+/* Tab Components */
+.tabs {
+  @apply flex space-x-1 border-b border-border;
+}
+
+.tab {
+  @apply px-3 py-2 text-sm font-medium rounded-t-md transition-colors;
+}
+
+.tab-active {
+  @apply bg-card text-primary border-b-2 border-primary -mb-px;
+}
+
+.tab-inactive {
+  @apply text-muted-foreground hover:text-foreground hover:bg-muted;
+}
+
+.tab-panel {
+  @apply py-4;
+}
+
+/* Progress Components */
+.progress {
+  @apply w-full bg-muted rounded-full overflow-hidden;
+}
+
+.progress-bar {
+  @apply bg-primary h-2 rounded-full transition-all duration-300;
+}
+
+/* Skeleton Components */
+.skeleton {
+  @apply animate-pulse bg-muted rounded;
+}
+
+.skeleton-text {
+  @apply h-4 bg-muted rounded w-full;
+}
+
+.skeleton-title {
+  @apply h-6 bg-muted rounded w-3/4;
+}
+
+.skeleton-avatar {
+  @apply h-10 w-10 bg-muted rounded-full;
+}
+
+/* Divider */
+.divider {
+  @apply border-t border-border my-4;
+}
+
+.divider-vertical {
+  @apply border-l border-border mx-4 h-full;
+}
+
+/* Utility Components */
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(8px);
+}
+
+.glass {
+  @apply bg-background/80 backdrop-blur border border-border;
+}
+
+/* Layout helpers */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-start {
+  @apply flex items-center justify-start;
+}
+
+.flex-end {
+  @apply flex items-center justify-end;
+}
+
+/* Spacing helpers */
+.section {
+  @apply py-12 md:py-16 lg:py-20;
+}
+
+.section-sm {
+  @apply py-6 md:py-8 lg:py-10;
+}
+
+.section-lg {
+  @apply py-16 md:py-20 lg:py-24;
+}

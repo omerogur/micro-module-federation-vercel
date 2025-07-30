@@ -1,7 +1,6 @@
 const sharedConfig = require('../../packages/shared-styles/tailwind.config');
 
-// eslint-disable-next-line import/no-default-export
-export default {
+module.exports = {
   ...sharedConfig,
   content: [
     ...sharedConfig.content,

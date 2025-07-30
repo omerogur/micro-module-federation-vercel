@@ -6,6 +6,7 @@ import { NextFederationPlugin } from '@module-federation/nextjs-mf';
 
 const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: ['@company/shared-styles', '@company/ui-components'],
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -4,6 +4,7 @@ import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 
 const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: ['@company/shared-styles', '@company/ui-components'],
   eslint: {
     ignoreDuringBuilds: true,
   },
